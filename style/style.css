@@ -1,0 +1,27 @@
+/* Header styles */
+header {
+    background-color: #41B6E6;
+    color: white;
+    font-size: 2em;
+}
+
+/* Footer styles */
+footer {
+    background-color: #41B6E6;
+    color: white;
+    font-size: 2em;
+}
+
+footer .address, footer .email {
+    font-size: 0.5em;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #FFD700; /* Gold color for hover effect */
+}
+
