@@ -25,3 +25,14 @@ footer .address, footer .email {
     color: #FFD700; /* Gold color for hover effect */
 }
 
+.logo {
+    max-height: 15vh;
+}
+
+.bg-success {
+    background-color: #41B6E6 !important;
+}
+
+.border-success {
+    border-color: #41B6E6 !important;
+}
