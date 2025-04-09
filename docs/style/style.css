@@ -1,3 +1,8 @@
+/* General font style */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 /* Header styles */
 header {
     background-color: #41B6E6;
@@ -36,3 +41,7 @@ footer .address, footer .email {
 .border-success {
     border-color: #41B6E6 !important;
 }
+
+/* .bg-committee{
+    background-color: #f5dddf;
+} */
