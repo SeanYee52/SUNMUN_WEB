@@ -55,6 +55,14 @@ footer .address, footer .email {
     background-position: center;
 }
 
+html {
+    scroll-snap-type: y mandatory;
+}
+
+section, header, footer {
+    scroll-snap-align: center;
+}
+
 /* .bg-committee{
     background-color: #f5dddf;
 } */
