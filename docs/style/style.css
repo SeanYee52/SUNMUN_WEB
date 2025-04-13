@@ -40,6 +40,21 @@ footer .address, footer .email {
     border-color: #41B6E6 !important;
 }
 
+#dais-tba{
+    background-color: antiquewhite; 
+    min-height: 100vh; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)), url(../Images/DaisToBeAnnounced.jpg); 
+    background-size: cover;
+    background-position: center;
+}
+
+#register{
+    height: 100vh; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)), url(../Images/sunway_uni.jpg); 
+    background-size: cover; 
+    background-position: center;
+}
+
 /* .bg-committee{
     background-color: #f5dddf;
 } */
