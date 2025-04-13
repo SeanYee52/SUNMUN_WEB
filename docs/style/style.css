@@ -16,11 +16,9 @@ footer {
     color: white;
     font-size: 2em;
 }
-
 footer .address, footer .email {
     font-size: 0.5em;
 }
-
 .footer-link {
     color: white;
     text-decoration: none;
