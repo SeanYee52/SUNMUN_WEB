@@ -9,27 +9,27 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="text-center py-3">
+        <header id="header" class="text-center py-3">
             <!-- Logo -->
-            <img src="Images/logo.avif" alt="SUNMUN Logo" class="img-fluid logo">
+            <img src="Images/logo.png" alt="SUNMUN Logo" class="img-fluid logo">
             
             <!-- Navigation Bar -->
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
                     <!-- Toggler Button for Mobile -->
-                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler ms-auto mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <!-- Collapsible Navbar Links -->
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav justify-content-center w-100 nav-justified">
-                            <li class="nav-item text-center flex-grow-1">
-                                <a class="nav-link text-white" href="index.html">Home</a>
+                        <ul class="navbar-nav justify-content-center w-100 nav-justified nav-pills mt-2">
+                            <li class="nav-item text-center flex-grow-1 mx-1">
+                                <a class="nav-link text-white active" href="index.html">Home</a>
                             </li>
-                            <li class="nav-item text-center flex-grow-1">
-                                <a class="nav-link text-white" href="committee.html">Committees</a>
+                            <li class="nav-item text-center flex-grow-1 mx-1">
+                                <a class="nav-link text-white" href="committee.html">Councils</a>
                             </li>
-                            <li class="nav-item text-center flex-grow-1">
+                            <li class="nav-item text-center flex-grow-1 mx-1">
                                 <a class="nav-link text-white" href="registration.html">Registration</a>
                             </li>
                         </ul>
@@ -39,13 +39,13 @@
             <!-- <nav class="navbar navbar-expand-lg navbar-light mt-3">
             <div class="container"></div>
                     <ul class="navbar-nav w-100 d-flex justify-content-around nav-justified">
-                        <li class="nav-item text-center flex-grow-1">
+                        <li class="nav-item text-center flex-grow-1 mx-1">
                             <a class="nav-link text-white" href="../HTML/home.html">Home</a>
                         </li>
-                        <li class="nav-item text-center flex-grow-1">
-                            <a class="nav-link text-white" href="../HTML/committee.html">Committees</a>
+                        <li class="nav-item text-center flex-grow-1 mx-1">
+                            <a class="nav-link text-white" href="../HTML/committee.html">Councils</a>
                         </li>
-                        <li class="nav-item text-center flex-grow-1">
+                        <li class="nav-item text-center flex-grow-1 mx-1">
                             <a class="nav-link text-white" href="../HTML/registration.html">Registration</a>
                         </li>
                     </ul>
@@ -53,17 +53,17 @@
             </nav> -->
         </header>
 
-        <section class="text-center text-white py-5" style="background-image: url('Images/sunway_uni.jpg'); background-size: cover; background-position: center;">
-            <h1 class="display-3 fw-bold">SUNMUN 2025</h1>
-            <h2 class="fst-italic fs-2 mt-4">Celebration: Championing Change and Progress</h2>
+        <section id="title_banner" class="text-center text-white py-5" style="">
+            <h1 class="display-3 fw-bold">Sunway Model United Nations Conference 2025</h1>
+            <h2 id="theme" class="fst-italic fs-2 mt-4">Celebration: Championing Change and Progress</h2>
             <p class="fs-4 mt-3">Subang Jaya, Selangor</p>
             <p class="fs-4">25 - 27 July</p>
             <a href="registration.html" class="btn btn-primary btn-lg mt-4">Register Now</a>
         </section>
         
         <section class="text-center py-5">
-            <h2 class="display-4 fw-bold">Committees Out Now</h2>
-            <a href="committee.html" class="btn btn-primary btn-lg mt-4">Check Out Our Councils!</a>
+            <h2 class="display-4 fw-bold">Councils Out Now</h2>
+            <a href="committee.html" class="btn btn-primary btn-lg mt-4">Check Out Our Councils</a>
         </section>
 
         <footer class="text-center text-lg-start py-3">
@@ -77,13 +77,12 @@
                     <!-- Address -->
                     <div class="col-12 col-md-4 mb-3">
                         <p class="mb-0 address">5, Jalan University, Bandar Sunway,</p>
-                        <p class="mb-0 address">47500 Subang Jaya,</p>
-                        <p class="mb-0 address">Selangor.</p>
+                        <p class="mb-0 address">47500 Subang Jaya, Selangor.</p>
                     </div>
                     <!-- Social Media -->
                     <div class="col-12 col-md-4 mb-3 text-center">
                         <a href="https://www.instagram.com/sunwaymun" target="_blank">
-                            <img src="Images/Instagram_logo_2022.svg" alt="Instagram" style="width: 40px; height: 40px;">
+                            <img src="Images/instagram_logo.png" alt="Instagram" style="width: 40px; height: 40px;">
                         </a>
                     </div>
                     <!-- Email -->
