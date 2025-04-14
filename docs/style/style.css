@@ -39,9 +39,9 @@ footer .address, footer .email {
     text-decoration: none;
 }
 
-.footer-link:hover {
-    color: #FFD700; /* Gold color for hover effect */
-}
+/* .footer-link:hover {
+    color: #FFD700;
+} */
 
 .logo {
     max-height: 15vh;
