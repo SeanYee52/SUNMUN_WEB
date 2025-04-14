@@ -55,6 +55,13 @@ footer .address, footer .email {
     background-position: center;
 }
 
+#under_construction{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)), url(../Images/UnderCon_icon.svg); 
+    background-size: cover; 
+    background-position: center; 
+    min-height: 80vh;
+}
+
 html {
     scroll-snap-type: y mandatory;
 }
