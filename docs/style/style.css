@@ -130,6 +130,36 @@ section, header, footer {
     background-color:  #80BB9E !important;
 }
 
+.icon-overlay-container {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+}
+
+.icon-overlay-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Ensures the image remains circular */
+}
+
+.icon-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    border-radius: 50%; /* Matches the circular shape of the image */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for the overlay */
+}
+
+.icon-overlay-container:hover .icon-overlay {
+    opacity: 1; /* Overlay becomes visible on hover */
+}
+
 /* .bg-committee{
     background-color: #f5dddf;
 } */
