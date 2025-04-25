@@ -78,12 +78,13 @@ footer .address, footer .email {
 }
 
 html {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
 }
 
 section, header, footer {
     scroll-snap-align: center;
 }
+
 
 .nav-link{
     color: black !important;
@@ -158,6 +159,51 @@ section, header, footer {
 
 .icon-overlay-container:hover .icon-overlay {
     opacity: 1; /* Overlay becomes visible on hover */
+}
+
+.sdg-background {
+    background: #FFFFFF;
+}
+
+.sdg-4-background {
+    background:rgb(194,31,51);
+}
+
+.sdg-6-background {
+    background:rgb(0,173,216,);
+}
+
+.sdg-8-background {
+    background:rgb(143,23,55);
+}
+
+.sdg-9-background {
+    background:rgb(243,109,36);
+}
+
+.sdg-10-background {
+    background:rgb(224,21,131);
+}
+
+.sdg-11-background {
+    background:rgb(249,157,37);
+}
+
+.sdg-16-background {
+    background: rgb(1,85,138);
+}
+
+.sdg-17-background {
+    background: rgb(25,54,103);
+}
+
+#council_desc {
+    height: 100vh;
+}
+
+#sdg {
+    height: auto;
+    min-height: 100vh;
 }
 
 /* .bg-committee{
