@@ -58,7 +58,7 @@ footer .address, footer .email {
 #dais-tba{
     background-color: antiquewhite; 
     min-height: 100vh; 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)), url(../Images/DaisToBeAnnounced.jpg); 
+    background-image: url(../Images/meet_the_dais.png); 
     background-size: cover;
     background-position: center;
 }
@@ -75,6 +75,10 @@ footer .address, footer .email {
     background-size: cover; 
     background-position: center; 
     min-height: 80vh;
+}
+
+#rrlink{
+    background-image: url(../Images/rr.png); 
 }
 
 html {
@@ -205,6 +209,16 @@ section, header, footer {
     height: auto;
     min-height: 100vh;
 }
+
+/* #main_council_section,
+#agenda_1,
+#agenda_2,
+#rrlink,
+#dais-tba,
+#register{
+    border-top: black solid 5px;
+    border-bottom: black solid 5px;
+} */
 
 /* .bg-committee{
     background-color: #f5dddf;
