@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/png" href="Images/favicon.png">
+        <link rel="icon" type="image/png" href="../Images/favicon.png">
     </head>
     <body>
         <header class="text-center py-3">
@@ -24,15 +24,18 @@
                     </button>
                     <!-- Collapsible Navbar Links -->
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav justify-content-center w-100 nav-justified">
+                        <ul class="navbar-nav justify-content-center w-100 nav-justified nav-pills mt-2">
                             <li class="nav-item text-center flex-grow-1 mx-1 mb-1">
                                 <a class="nav-link text-white" href="../index.html">Home</a>
                             </li>
                             <li class="nav-item text-center flex-grow-1 mx-1 mb-1">
-                                <a class="nav-link text-white" href="../committee.html">Councils</a>
+                                <a class="nav-link text-white" href="../councils.html">Councils</a>
                             </li>
                             <li class="nav-item text-center flex-grow-1 mx-1 mb-1">
                                 <a class="nav-link text-white" href="../registration.html">Registration</a>
+                            </li>
+                            <li class="nav-item text-center flex-grow-1 mx-1 mb-1">
+                                <a class="nav-link text-white" href="../resources.html">Resources</a>
                             </li>
                         </ul>
                     </div>
@@ -41,37 +44,61 @@
         </header>
 
         <section id="sochum" class="d-flex flex-column justify-content-center align-items-center">
-            <section id="main_council_section" style="height: 100vh; background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)), url('../Images/CouncilImagePlaceholder.jpg'); background-size: cover;" class="text-light text-center d-flex flex-column justify-content-center align-items-center py-5 gap-4 col-12">
-                <img src="../Images/placeholder.svg" alt="Instagram" class="img-fluid rounded-circle col-6 col-md-4 col-lg-3 mx-auto d-block">
-                <h1 class="fw-bold display-1">SOCHUM</h1>
+            <section id="main_council_section" style="height: 100vh; background-image:  url('../Images/sochum_council.png'); background-size: cover;" class=" text-center d-flex flex-column justify-content-center align-items-center py-5 gap-4 col-12">
+                <img src="../Images/sochum.png" alt="Instagram" class="img-fluid rounded-circle col-6 col-md-4 col-lg-3 mx-auto d-block">
+                <h1 class="fw-bold display-1">Social, Humanitarian, and Cultural Committee</h1>
                 <p class="text-center fs-4 fw-bold col-12">Countering the use of information and communications technologies for criminal purposes</p>
                 <p class="text-center fs-4 fw-bold col-12">Combating the glorification of Nazism</p>
                 <em><p class="text-center fs-4 fw-bold">Format: HMUN</p></em>
             </section>
-            <section id="sdg" class="d-flex flex-column flex-lg-row gap-5 px-5 py-5 col-12 align-items-center justify-content-center" style="height: 100vh;">
-                <img src="../Images/sdg_16.svg" alt="SDG8" style="border-radius: 32px;" class="img-fluid rounded col-12 col-md-8 col-lg-4 mx-auto d-block ps-0 ps-md-0 ps-lg-5">
-                <p class="col-12 col-md-4 col-lg-8 fs-2 text-center text-lg-start">Details to be announced</p>
-            </section>
-            <section id="agenda_1" style="height: 100vh; background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)), url('../Images/AgendaImagePlaceholder.jpg'); background-size: cover;" class="text-light text-center d-flex flex-column align-items-center justify-content-center col-12 gap-5">
+            <div class="sdg-background">
+                <section id="council_desc" class="d-flex flex-column flex-lg-row gap-5 px-5 py-5 col-12 align-items-center justify-content-left">
+                    <div>
+                        <h2 class="fw-bold display-5">COUNCIL BACKGROUND</h2>
+                        <p class="col-12 col-md-4 col-lg-8 fs-2">
+                            The Social, Humanitarian, and Cultural Committee is known as the third committee in the United Nations General Assembly.
+                            It focuses on the examination of human rights questions, including reports of the special procedures of the Human Rights Council established in 2006, and plays an imperative role in discussing social issues worldwide.
+                        </p>
+                    </div>
+                </section>
+                <section id="sdg" class="d-flex flex-column flex-lg-row gap-5 px-5 py-5 col-12 align-items-center justify-content-center  sdg-16-background">
+                    <img src="../Images/sdg_16.svg" alt="SDG8" style="border-radius: 32px;" class="img-fluid rounded col-12 col-md-8 col-lg-4 mx-auto d-block ps-0 ps-md-0 ps-lg-5">
+                    <p class="col-12 col-md-4 col-lg-8 fs-2 text-center text-lg-start text-white">
+                        The significance of international cooperation is emphasized in SDG 17. 
+                        ASEAN+ seeks to eliminate regional poverty and foster economic growth within Southeast Asia. 
+                        This is an ambitious goal that can only be achieved through strong partnerships between nations. 
+                        ASEAN+ strongly embodies what SDG 17 desires to achieve, as it aims to promote unity for a more sustainable Southeast Asia.
+                    </p>
+                </section>
+            </div>  
+            <section id="agenda_1" style="height: 100vh; background-image:  url('../Images/sochum_topic_1.png'); background-size: cover;" class=" text-center d-flex flex-column align-items-center justify-content-center col-12 gap-5">
                 <h1 class="display-1 fw-bold">Agenda 1</h1>
                 <p class="fs-4 fw-bold col-12 col-md-8 col-lg-6">Countering the use of information and communications technologies for criminal purposes</p>
                 <p class="col-12 col-md-8 col-lg-6 fs-4">Details to be announced</p>
             </section>
-            <section id="agenda_2" style="height: 100vh; background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)), url('../Images/AgendaImagePlaceholder.jpg'); background-size: cover;" class="text-light text-center d-flex flex-column align-items-center justify-content-center col-12 gap-5">
+            <section id="agenda_2" style="height: 100vh; background-image:  url('../Images/sochum_topic_2.png'); background-size: cover;" class=" text-center d-flex flex-column align-items-center justify-content-center col-12 gap-5">
                 <h1 class="display-1 fw-bold">Agenda 2</h1>
                 <p class="fs-4 fw-bold col-12 col-md-8 col-lg-6">Combating the glorification of Nazism</p>
                 <p class="col-12 col-md-8 col-lg-6 fs-4">Details to be announced</p>
             </section>
             <section id="rrlink" style="height: 100vh;" class="d-flex flex-column align-items-center justify-content-center gap-5 col-12">
-                <h1 class="fw-bold display-1 text-center w-md-25">Research Report</h1>
-                <a href="#" class="btn btn-primary btn-lg fs-2 text-center px-4 py-4 disabled">To Be Announced</a> 
+                <div class="row w-100">
+                    <div class="col-12 col-lg-6 text-center d-flex flex-column justify-content-center py-4"> <!-- Added py-4 -->
+                        <h1 class="fw-bold display-1">Research Report</h1>
+                        <a href="#" class="btn btn-primary btn-lg fs-2 px-4 py-4 disabled d-inline-block mx-auto">To Be Announced</a>
+                    </div>
+                    <div class="col-12 col-lg-6 text-center d-flex flex-column justify-content-center py-4"> <!-- Added py-4 -->
+                        <h1 class="fw-bold display-1">Country Matrix</h1>
+                        <a href="#" class="btn btn-primary btn-lg fs-2 px-4 py-4 disabled d-inline-block mx-auto">To Be Announced</a>
+                    </div>
+                </div>
             </section>
             <section id="dais-tba" class="d-flex flex-column align-items-center justify-content-center col-12">
-                <h1 class="fw-bold display-3 pb-2 text-white">Meet the Dais</h1>
+                <h1 class="fw-bold display-3 pb-2">Meet the Dais</h1>
             </section>
-            <section id="register" style="" class="text-light d-flex flex-column align-items-center justify-content-center gap-5 col-12">
+            <section id="register"  class="text-light d-flex flex-column align-items-center justify-content-center gap-5 col-12">
                 <h1 class="fw-bold display-1 text-center">Register for SUNMUN 2025</h1>
-                <a href="../docs/registration.html" class="btn btn-primary btn-lg fs-2 text-center px-4 py-4">Register Now</a>
+                <a href="../registration.html" class="btn btn-primary btn-lg fs-2 text-center px-4 py-4">Register Now</a>
             </section>
         </section>  
         <footer class="text-center text-lg-start py-3">

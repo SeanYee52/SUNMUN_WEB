@@ -58,7 +58,7 @@ footer .address, footer .email {
 #dais-tba{
     background-color: antiquewhite; 
     min-height: 100vh; 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)), url(../Images/DaisToBeAnnounced.jpg); 
+    background-image: url(../Images/meet_the_dais.png); 
     background-size: cover;
     background-position: center;
 }
@@ -77,13 +77,20 @@ footer .address, footer .email {
     min-height: 80vh;
 }
 
+#rrlink{
+    background-image: url(../Images/rr.png); 
+    background-size: cover;
+    background-position: center;
+}
+
 html {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
 }
 
 section, header, footer {
     scroll-snap-align: center;
 }
+
 
 .nav-link{
     color: black !important;
@@ -130,6 +137,112 @@ section, header, footer {
     background-color:  #80BB9E !important;
 }
 
+.icon-overlay-container {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+}
+
+.icon-overlay-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Ensures the image remains circular */
+}
+
+.icon-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    border-radius: 50%; /* Matches the circular shape of the image */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for the overlay */
+}
+
+.icon-overlay-container:hover .icon-overlay {
+    opacity: 1; /* Overlay becomes visible on hover */
+}
+
+.sdg-background {
+    background: #FFFFFF;
+}
+
+.sdg-4-background {
+    background:rgb(194,31,51);
+}
+
+.sdg-6-background {
+    background:rgb(0,173,216);
+}
+
+.sdg-8-background {
+    background:rgb(143,23,55);
+}
+
+.sdg-9-background {
+    background:rgb(243,109,36);
+}
+
+.sdg-10-background {
+    background:rgb(224,21,131);
+}
+
+.sdg-11-background {
+    background:rgb(249,157,37);
+}
+
+.sdg-16-background {
+    background: rgb(1,85,138);
+}
+
+.sdg-17-background {
+    background: rgb(25,54,103);
+}
+
+#council_desc {
+    height: 100vh;
+}
+
+#sdg {
+    height: auto;
+    min-height: 100vh;
+}
+
+/* #main_council_section,
+#agenda_1,
+#agenda_2,
+#rrlink,
+#dais-tba,
+#register{
+    border-top: black solid 5px;
+    border-bottom: black solid 5px;
+} */
+
 /* .bg-committee{
     background-color: #f5dddf;
 } */
+
+/* A4 aspect ratio responsive wrapper */
+.a4-iframe-wrapper {
+    position: relative;
+    max-width: 800px;      /* Optional: limit max width */
+    margin: 0 auto;
+    aspect-ratio: 1 / 1.4142; /* A4 aspect ratio: width / height */
+    height: auto;             /* Height is determined by width and aspect-ratio */
+    max-height: 80vh;         /* Prevents it from exceeding viewport height */
+}
+.a4-iframe-wrapper iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border: solid 1px;
+}
+@media (max-width: 900px) {
+    .a4-iframe-wrapper {
+        max-width: 95vw;
+    }
+}
