@@ -246,3 +246,10 @@ section, header, footer {
         max-width: 95vw;
     }
 }
+.equal-heading {
+    min-height: 3.5em; /* Adjust as needed for your font size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
