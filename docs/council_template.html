@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Under Construction</title>
@@ -7,29 +8,30 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="Images/favicon.png">
     </head>
     <body>
         <header class="text-center py-3">
             <!-- Logo -->
-            <img src="Images/logo.avif" alt="SUNMUN Logo" class="img-fluid logo">
+            <img src="Images/logo.png" alt="SUNMUN Logo" class="img-fluid logo">
             
             <!-- Navigation Bar -->
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
                     <!-- Toggler Button for Mobile -->
-                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler ms-auto mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <!-- Collapsible Navbar Links -->
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav justify-content-center w-100 nav-justified">
-                            <li class="nav-item text-center flex-grow-1">
+                        <ul class="navbar-nav justify-content-center w-100 nav-justified nav-pills mt-2">
+                            <li class="nav-item text-center flex-grow-1 mx-1 mb-1">
                                 <a class="nav-link text-white" href="index.html">Home</a>
                             </li>
-                            <li class="nav-item text-center flex-grow-1">
-                                <a class="nav-link text-white" href="committee.html">Committees</a>
+                            <li class="nav-item text-center flex-grow-1 mx-1 mb-1">
+                                <a class="nav-link text-white active" href="committee.html">Councils</a>
                             </li>
-                            <li class="nav-item text-center flex-grow-1">
+                            <li class="nav-item text-center flex-grow-1 mx-1 mb-1">
                                 <a class="nav-link text-white" href="registration.html">Registration</a>
                             </li>
                         </ul>
@@ -43,7 +45,7 @@
                             <a class="nav-link text-white" href="../HTML/home.html">Home</a>
                         </li>
                         <li class="nav-item text-center flex-grow-1">
-                            <a class="nav-link text-white" href="../HTML/committee.html">Committees</a>
+                            <a class="nav-link text-white" href="../HTML/committee.html">Councils</a>
                         </li>
                         <li class="nav-item text-center flex-grow-1">
                             <a class="nav-link text-white" href="../HTML/registration.html">Registration</a>
@@ -80,11 +82,15 @@
             </section>
             <section id="rrlink" style="height: 100vh;" class="d-flex flex-column align-items-center justify-content-center gap-5 col-12">
                 <h1 class="fw-bold display-1 text-center w-md-25">Research Report</h1>
-                <a href="../HTML/registration.html" class="btn btn-primary btn-lg fs-2 text-center px-4 py-4">Research Report Document</a>
+                <a href="#" class="btn btn-primary btn-lg fs-2 text-center px-4 py-4 disabled">To Be Announced</a> 
             </section>
-            <section id="dais-tba" style="background-color: antiquewhite; min-height: 100vh;" class="d-flex flex-column align-items-center justify-content-center col-12">
+            <section id="dais-tba" class="d-flex flex-column align-items-center justify-content-center col-12">
                 <h1 class="fw-bold display-3 pb-2">Meet the Dais</h1>
+<<<<<<< HEAD:docs/template.html
                 <img src="Images/DaisToBeAnnounced.jpg" class="col-5">
+=======
+                <!-- <img src="Images/DaisToBeAnnounced.jpg" class="col-8"> -->
+>>>>>>> 37b2ecf8d96cf9b41e5f8e97f4e15c8f30beec18:docs/council_template.html
             </section>
             <!-- <section id="dais" style="background-color: antiquewhite; min-height: 100vh;" class="d-flex flex-column align-items-center justify-content-center col-12">
                 <h1 class="fw-bold display-3 pb-2">Meet the Dais</h1>
@@ -103,8 +109,8 @@
                     <img src="Images/ToBeAnnounced.jpg" style="background-size: cover; border-color: black;" class="rounded border border-2 col-6 col-md-4 col-lg-2 order-1 order-lg-2">
                 </div>
             </section> -->
-            <section id="register" style="height: 100vh; background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)), url(Images/sunway_uni.jpg); background-size: cover;" class="text-light d-flex flex-column align-items-center justify-content-center gap-5 col-12">
-                <h1 class="fw-bold display-1 text-center">Register for SUNMUN 2025!</h1>
+            <section id="register" style="" class="text-light d-flex flex-column align-items-center justify-content-center gap-5 col-12">
+                <h1 class="fw-bold display-1 text-center">Register for SUNMUN 2025</h1>
                 <a href="../docs/registration.html" class="btn btn-primary btn-lg fs-2 text-center px-4 py-4">Register Now</a>
             </section>
         </section>  
@@ -119,13 +125,13 @@
                     <!-- Address -->
                     <div class="col-12 col-md-4 mb-3">
                         <p class="mb-0 address">5, Jalan University, Bandar Sunway,</p>
-                        <p class="mb-0 address">47500 Subang Jaya,</p>
-                        <p class="mb-0 address">Selangor.</p>
+                        <p class="mb-0 address">47500 Subang Jaya, Selangor.</p>
+                        
                     </div>
                     <!-- Social Media -->
                     <div class="col-12 col-md-4 mb-3 text-center">
                         <a href="https://www.instagram.com/sunwaymun" target="_blank">
-                            <img src="Images/Instagram_logo_2022.svg" alt="Instagram" style="width: 40px; height: 40px;">
+                            <img src="Images/instagram_logo.png" alt="Instagram" style="width: 40px; height: 40px;">
                         </a>
                     </div>
                     <!-- Email -->
