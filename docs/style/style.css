@@ -84,6 +84,7 @@ footer .address, footer .email, footer .tips {
 }
 
 html {
+    /* scroll-snap-type: none; */
     scroll-snap-type: y proximity;
 }
 
@@ -252,4 +253,21 @@ section, header, footer {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+.secretariat-section{
+    filter: brightness(80%);
+    transition: 0.3s ease;
+    
+    
+}
+.secretariat-section img{
+    transform: scale(0.975);
+    transition: 0.3s ease;
+}
+.secretariat-section:hover{
+    filter: brightness(100%);
+    
+}
+.secretariat-section:hover img{
+    transform: scale(1.0);
 }
