@@ -1,111 +1,145 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Homepage</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="bootstrap-5.3.4-dist/css/bootstrap.css">
-        <link rel="stylesheet" href="style/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/png" href="Images/favicon.png">
-    </head>
-    <body>
-        <header id="header" class="text-center py-3">
-            <!-- Logo -->
-            <img src="Images/logo.png" alt="SUNMUN Logo" class="img-fluid logo">
-            
-            <!-- Navigation Bar -->
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
-                    <!-- Toggler Button for Mobile -->
-                    <button class="navbar-toggler ms-auto mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!-- Collapsible Navbar Links -->
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav justify-content-center w-100 nav-justified nav-pills mt-2">
-                            <li class="nav-item text-center flex-grow-1 mx-1 mb-1">
-                                <a class="nav-link text-white active" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item text-center flex-grow-1 mx-1 mb-1">
-                                <a class="nav-link text-white" href="councils.html">Councils</a>
-                            </li>
-                            <li class="nav-item text-center flex-grow-1 mx-1 mb-1">
-                                <a class="nav-link text-white" href="registration.html">Registration</a>
-                            </li>
-                            <li class="nav-item text-center flex-grow-1 mx-1 mb-1">
-                                <a class="nav-link text-white" href="resources.html">Resources</a>
-                            </li>
-                            <li class="nav-item text-center flex-grow-1 mx-1 mb-1">
-                                <a class="nav-link text-white" href="merchandise.html">Merchandise</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- <nav class="navbar navbar-expand-lg navbar-light mt-3">
-            <div class="container"></div>
-                    <ul class="navbar-nav w-100 d-flex justify-content-around nav-justified">
-                        <li class="nav-item text-center flex-grow-1 mx-1 mb-1">
-                            <a class="nav-link text-white" href="../HTML/home.html">Home</a>
-                        </li>
-                        <li class="nav-item text-center flex-grow-1 mx-1 mb-1">
-                            <a class="nav-link text-white" href="../HTML/councils.html">Councils</a>
-                        </li>
-                        <li class="nav-item text-center flex-grow-1 mx-1 mb-1">
-                            <a class="nav-link text-white" href="../HTML/registration.html">Registration</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav> -->
-        </header>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage | SUNMUN 2025</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Tailwind CSS CDN -->
+    <link rel="stylesheet" href="style/main.css"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Images/favicon.png">
 
-        <section id="title_banner" class="text-center text-white py-5" >
-            <section class="px-5 mx-auto">
-                <h1 class="display-4 fw-bold">Sunway Model United Nations Conference 2025</h1>
-                <h2 id="theme" class="fst-italic fs-2 mt-4">Celebration: Championing Change and Progress</h2>
-                <p class="fs-4 mt-3">Subang Jaya, Selangor</p>
-                <p class="fs-4">25 - 27 July</p>
-                <a href="registration.html" class="btn btn-primary px-4 py-3 btn-lg mt-4">Register Now</a>
-            </section>
-        </section>
+    <style>
+        body { font-family: 'Open Sans', sans-serif; }
+        #theme { font-family: 'Futura', sans-serif; }
+
+        .nav-link-grow { position: relative; }
+        .nav-link-grow::after {
+            content: ''; position: absolute; left: 0; bottom: -2px;
+            width: 0; height: 2px; background-color: black;
+            transition: width 0.3s ease-in-out;
+        }
+        .nav-link-grow:hover::after { width: 100%; }
+
+        html { scroll-snap-type: y proximity; }
+        section, header, footer { scroll-snap-align: center; }
+
+        /* Tilt Effect Container */
+        .tilt-wrapper {
+            perspective: 1000px; /* Gives the 3D depth */
+        }
+        #tilting-logo {
+            transition: transform 0.1s ease-out; /* Smooths out the movement */
+            transform-style: preserve-3d;
+            will-change: transform;
+        }
+    </style>
+</head>
+<body class="bg-white text-black">
+
+    <!-- Header -->
+    <header id="header" class="h-[25vh] text-center py-6 bg-[url('../Images/header_banner.png')] bg-cover bg-center text-white">
+        <img src="Images/logo.png" alt="SUNMUN Logo" class="max-h-[15vh] mx-auto mb-2">
         
-        <section class="text-center py-5">
-            <h2 class="display-5 fw-bold">Councils Available Now</h2>
-            <a href="councils.html" class="btn btn-primary px-4 py-3 btn-lg mt-4">Check Out Our Councils</a>
-        </section>
+        <nav class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-2 md:gap-8 text-xl md:text-3xl">
+                <a href="index.html" class="nav-link-grow px-4 py-2 text-black font-semibold outline outline-3 outline-black">Home</a>
+                <a href="councils.html" class="nav-link-grow px-4 py-2 text-black font-semibold">Councils</a>
+                <a href="registration.html" class="nav-link-grow px-4 py-2 text-black font-semibold">Registration</a>
+                <a href="resources.html" class="nav-link-grow px-4 py-2 text-black font-semibold">Resources</a>
+                <a href="merchandise.html" class="nav-link-grow px-4 py-2 text-black font-semibold">Merchandise</a>
+            </div>
+        </nav>
+    </header>
 
-        <footer class="text-center text-lg-start py-3">
-            <div class="container">
-                <!-- SUNMUN 2025 Footer Title -->
-                <div class="mb-3">
-                    <p class="mb-0 fw-bold text-center">SUNMUN 2025</p>
-                    <p class="mb-0 fw-bold tips text-center">Click on our Instagram and email to learn more</p>
+    <!-- Title Banner Section -->
+    <section id="title_banner" class="h-[75vh] relative text-center text-white py-32 bg-[linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('../Images/sunway_uni.jpg')] bg-cover bg-center">
+        <div class="px-6 max-w-5xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight">Sunway Model United Nations Conference 2026</h1>
+            <h2 id="theme" class="italic text-2xl md:text-4xl mt-6 font-bold">Conference Theme Here</h2>
+            <p class="text-xl md:text-2xl mt-4">Subang Jaya, Selangor</p>
+            <p class="text-xl md:text-2xl">Dates Here</p>
+            
+            <a href="registration.html" class="inline-block mt-8 px-8 py-4 bg-[#ffdcdf] text-black font-bold rounded border border-[#f5c6c8] transition-all duration-300 hover:bg-[#f5c6c8] hover:scale-105">
+                Register Now
+            </a>
+        </div>
+    </section>
+    
+    <!-- Councils Section -->
+    <section class="text-center py-10 bg-white overflow-hidden">
+        <!-- Tilt Logo Wrapper -->
+        <div class="mx-auto w-90 h-90 tilt-wrapper flex justify-center mb-8 aspect-1/1 border-2 rounded-full shadow-lg">
+            <img id="tilting-logo" 
+                 src="./Images/logo.png" 
+                 alt="SUNMUN Logo" 
+                 class="w-60 h-60 object-contain drop-shadow-2xl m-auto">
+        </div>
+        <h2 class="text-3xl md:text-5xl font-bold">Councils Available Now</h2>
+        <a href="councils.html" class="inline-block mt-8 px-8 py-4 bg-[#ffdcdf] text-black font-bold rounded border border-[#f5c6c8] transition-all duration-300 hover:bg-[#f5c6c8] hover:scale-105">
+            Check Out Our Councils
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#ffdcdf] py-10">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-6">
+                <p class="text-3xl md:text-4xl font-bold uppercase tracking-wide">SUNMUN 2025</p>
+                <p class="text-sm font-bold opacity-70 mt-1">Click on our Instagram and email to learn more</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="text-sm md:text-left flex-1">
+                    <p>5, Jalan University, Bandar Sunway,</p>
+                    <p>47500 Subang Jaya, Selangor.</p>
                 </div>
-                <!-- Address, Social Media, and Email -->
-                <div class="row text-center text-md-start flex-column flex-md-row">
-                    <!-- Address -->
-                    <div class="col-12 col-md-4 mb-3">
-                        <p class="mb-0 address">5, Jalan University, Bandar Sunway,</p>
-                        <p class="mb-0 address">47500 Subang Jaya, Selangor.</p>
-                    </div>
-                    <!-- Social Media -->
-                    <div class="col-12 col-md-4 mb-3 text-center">
-                        <a href="https://www.instagram.com/sunwaymun" target="_blank">
-                            <img src="Images/instagram_logo.png" alt="Instagram" style="width: 40px; height: 40px;">
-                        </a>
-                    </div>
-                    <!-- Email -->
-                    <div class="col-12 col-md-4 text-center text-md-end">
-                        <p class="mb-0 email">Email: <a href="mailto:sunwaymun@gmail.com" class="footer-link text-black">sunwaymun@gmail.com</a></p>
-                    </div>
+
+                <div class="flex-1 flex justify-center">
+                    <a href="https://www.instagram.com/sunwaymun" target="_blank" class="transition-transform hover:scale-110">
+                        <img src="Images/instagram_logo.png" alt="Instagram" class="w-10 h-10">
+                    </a>
+                </div>
+
+                <div class="text-sm md:text-right flex-1">
+                    <p>Email: <a href="mailto:sunwaymun@gmail.com" class="font-semibold hover:underline">sunwaymun@gmail.com</a></p>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
-        <!-- Bootstrap Bundle with Popper -->
-        <script src="bootstrap-5.3.4-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const logo = document.getElementById('tilting-logo');
+        const section = logo.parentElement;
 
-    </body>
+        section.addEventListener('mousemove', (e) => {
+            const rect = logo.getBoundingClientRect();
+            
+            // Calculate center of the logo
+            const logoCenterX = rect.left + rect.width / 2;
+            const logoCenterY = rect.top + rect.height / 2;
+            
+            // Calculate mouse distance from center
+            const mouseX = e.clientX - logoCenterX;
+            const mouseY = e.clientY - logoCenterY;
+            
+            // Degree of rotation (higher number = more tilt)
+            const sensitivity = 25; 
+            const rotateX = (mouseY / (rect.height / 2)) * -sensitivity;
+            const rotateY = (mouseX / (rect.width / 2)) * sensitivity;
+            
+            logo.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.1)`;
+        });
+
+        // Reset rotation when mouse leaves
+        section.addEventListener('mouseleave', () => {
+            logo.style.transform = `rotateX(0deg) rotateY(0deg) scale(1)`;
+        });
+    </script>
+</body>
 </html>
