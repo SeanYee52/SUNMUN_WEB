@@ -1,2 +1,56 @@
 @import "tailwindcss";
 
+.main-bg-colour {
+    background-color: #ffdcdf;
+}
+
+.default-button-style {
+    background-color: #ffdcdf;
+}
+
+.default-button-style:hover {
+    background-color: #f5c6c8;
+}
+
+body { font-family: 'Open Sans', sans-serif; }
+
+#theme { font-family: 'Futura', sans-serif; }
+
+.nav-link-grow { position: relative; }
+
+.nav-link-grow::after {
+    content: ''; position: absolute; left: 0; bottom: -2px;
+    width: 0; height: 2px; background-color: black;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link-grow:hover::after { width: 100%; }
+
+/* Tilt Effect Container */
+.tilt-wrapper {
+    perspective: 1000px; /* Gives the 3D depth */
+}
+#tilting-logo {
+    transition: transform 0.1s ease-out; /* Smooths out the movement */
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+/* Scroll Reveal Styles */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Seamless Overlays for Backgrounds */
+.section-mask-top {
+    mask-image: linear-gradient(to bottom, transparent, black 15%);
+}
+.section-mask-bottom {
+    mask-image: linear-gradient(to top, transparent, black 15%);
+}

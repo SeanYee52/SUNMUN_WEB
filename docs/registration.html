@@ -1,168 +1,172 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Registration</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="bootstrap-5.3.4-dist/css/bootstrap.css">
-        <link rel="stylesheet" href="style/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/png" href="Images/favicon.png">
-    </head>
-    <body>
-        <header class="text-center py-3">
-            <!-- Logo -->
-            <img src="Images/logo.png" alt="SUNMUN Logo" class="img-fluid logo">
-            
-            <!-- Navigation Bar -->
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
-                    <!-- Toggler Button for Mobile -->
-                    <button class="navbar-toggler ms-auto mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!-- Collapsible Navbar Links -->
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav justify-content-center w-100 nav-justified nav-pills mt-2">
-                            <li class="nav-item text-center flex-grow-1 mx-1 mb-1">
-                                <a class="nav-link text-white" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item text-center flex-grow-1 mx-1 mb-1">
-                                <a class="nav-link text-white" href="councils.html">Councils</a>
-                            </li>
-                            <li class="nav-item text-center flex-grow-1 mx-1 mb-1">
-                                <a class="nav-link text-white active" href="registration.html">Registration</a>
-                            </li>
-                            <li class="nav-item text-center flex-grow-1 mx-1 mb-1">
-                                <a class="nav-link text-white" href="resources.html">Resources</a>
-                            </li>
-                            <li class="nav-item text-center flex-grow-1 mx-1 mb-1">
-                                <a class="nav-link text-white" href="merchandise.html">Merchandise</a>
-                            </li>
-                        </ul>
-                    </div>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage | SUNMUN 2026</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Tailwind CSS CDN -->
+    <link rel="stylesheet" href="style/main.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Images/favicon.png">
+</head>
+<body class="bg-white text-black">
+
+    <!-- Header -->
+    <header id="header" class="h-[20vh] text-center py-2 bg-[url('../Images/header_banner.png')] bg-cover bg-center text-white">
+        <img src="Images/logo.png" alt="SUNMUN Logo" class="max-h-[12vh] mx-auto mb-2">
+
+    
+        <nav class="container mx-auto px-4">
+
+            <nav class="hidden md:block container mx-auto px-4">
+                <div class="flex flex-wrap justify-center gap-2 md:gap-8 text-xl md:text-3xl">
+                    <a href="index.html" class="w-1/5 nav-link-grow px-4 py-2 text-black font-semibold">Home</a>
+                    <a href="councils.html" class="w-1/5 nav-link-grow px-4 py-2 text-black font-semibold">Councils</a>
+                    <a href="registration.html" class="w-1/5 nav-link-grow px-4 py-2 text-black font-semibold outline outline-3 outline-black">Registration</a>
+                    <a href="resources.html" class="w-1/5 nav-link-grow px-4 py-2 text-black font-semibold hidden">Resources</a>
+                    <a href="merchandise.html" class="w-1/5 nav-link-grow px-4 py-2 text-black font-semibold hidden">Merchandise</a>
                 </div>
             </nav>
-            <!-- <nav class="navbar navbar-expand-lg navbar-light mt-3">
-            <div class="container"></div>
-                    <ul class="navbar-nav w-100 d-flex justify-content-around nav-justified">
-                        <li class="nav-item text-center flex-grow-1 mx-1 mb-1">
-                            <a class="nav-link text-white" href="../HTML/home.html">Home</a>
-                        </li>
-                        <li class="nav-item text-center flex-grow-1 mx-1 mb-1">
-                            <a class="nav-link text-white" href="../HTML/councils.html">Councils</a>
-                        </li>
-                        <li class="nav-item text-center flex-grow-1 mx-1 mb-1">
-                            <a class="nav-link text-white" href="../HTML/registration.html">Registration</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav> -->
-        </header>
 
-        <section class="text-center py-5">
-            <h3 class="display-6 fw-bold">Register for SUNMUN 2025</h3>
-        </section>
+            <!-- Animated Hamburger Button -->
+            <div class="md:hidden flex justify-end mb-2">
+                <button id="menu-toggle" class="relative group p-2 bg-white rounded-lg shadow-md focus:outline-none">
+                    <div class="w-6 h-5 flex flex-col justify-between items-center overflow-hidden">
+                        <span id="line1" class="w-full h-[3px] bg-black transform transition-all duration-300 origin-left"></span>
+                        <span id="line2" class="w-full h-[3px] bg-black transition-all duration-300"></span>
+                        <span id="line3" class="w-full h-[3px] bg-black transform transition-all duration-300 origin-left"></span>
+                    </div>
+                </button>
+            </div>
 
-        <section class="text-center py-5 gap-5" style="background-color: #ffdcdf;">
-            <div class="container">
-                <h3 class="display-6 fw-bold">Pricing & Registration Window</h3>
-                <div class="row g-4 justify-content-center">
-                    <!-- Dais Registration Card -->
-                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-                        <div class="card border-secondary flex-fill" style="max-width: 500px; aspect-ratio: 4 / 3;">
-                            <div class="card-body bg-secondary text-white d-flex flex-column justify-content-center align-items-center">
-                                <h3 class="card-title fw-bold">Dais Registration</h3>
-                                <p class="card-text fs-5 fst-italic">CLOSED</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Delegate Registration Card -->
-                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-                        <div class="card border-success flex-fill" style="max-width: 500px; aspect-ratio: 4 / 3;">
-                            <div class="card-body bg-success text-white d-flex flex-column justify-content-center align-items-center">
-                                <h3 class="card-title fw-bold">Delegate Registration</h3>
-                                <h3 class="card-title fw-bold">Group Delegation Registration</h3>
-                                <h3 class="card-title fw-bold">Observer Registration</h3>
-                                <p class="card-text fs-5 fst-italic">Normal: 24th May to 14th June</p>
-                                <p class="card-text fs-5 fst-italic">Late: 15th June to 14th July</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Normal Registration Card -->
-                    <!-- <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-                        <div class="card border-success flex-fill" style="max-width: 500px; aspect-ratio: 4 / 3;">
-                            <div class="card-body bg-success text-white d-flex flex-column justify-content-center align-items-center">
-                                <h3 class="card-title fw-bold">Normal Registration</h3>
-                                <p class="card-text fs-4 fw-bold">Fee: RM 100</p>
-                                <p class="card-text fs-5 fst-italic">Registration Period: 1st April - 30th June</p>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- Late Registration Card -->
-                    <!-- <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-                        <div class="card border-secondary flex-fill" style="max-width: 500px; aspect-ratio: 4 / 3;">
-                            <div class="card-body bg-secondary text-white d-flex flex-column justify-content-center align-items-center">
-                                <h3 class="card-title fw-bold">Late Registration</h3>
-                                <p class="card-text fs-4 fw-bold">Fee: RM 150</p>
-                                <p class="card-text fs-5 fst-italic">Registration Period: 1st July - 15th July</p>
-                            </div>
-                        </div>
-                    </div> -->
+            
+            <!-- Navigation Links with Slide/Fade Animation -->
+            <div id="nav-menu" 
+                class="md:hidden absolute z-5 md:relative left-0 w-full md:w-auto 
+                        bg-white md:bg-transparent flex-col md:flex-row 
+                        justify-center items-center gap-4 md:gap-8 text-xl md:text-3xl 
+                        shadow-2xl md:shadow-none border-b md:border-none border-gray-100
+                        /* Animation Classes */
+                        max-h-0 opacity-0 overflow-hidden pointer-events-none
+                        md:max-h-none md:opacity-100 md:pointer-events-auto
+                        transition-all duration-500 ease-in-out">
+                
+                <div class="flex flex-col md:flex-row w-full items-center gap-4 py-8 md:py-0">
+                    <a href="index.html" class="w-4/5 md:w-auto nav-link-grow px-4 py-2 text-black font-semibold md:outline md:outline-3 md:outline-black">Home</a>
+                    <a href="councils.html" class="w-4/5 md:w-auto nav-link-grow px-4 py-2 text-black font-semibold">Councils</a>
+                    <a href="registration.html" class="w-4/5 md:w-auto nav-link-grow px-4 py-2 text-black font-semibold">Registration</a>
                 </div>
             </div>
-            <div class="container mt-5">
-                <h3 class="display-6 fw-bold">Country Matrix</h3>
-                <a href="https://docs.google.com/spreadsheets/d/12krFVCdxG-zgu8jACR5TEvauvCoQ9IVu9Hs63eO2BEA/edit?usp=sharing" class="btn btn-primary btn-lg fs-3 px-4 py-3" style="background-color:white !important">Country Matrix</a>
-            </div>
-        </section>
+        </nav>
+    </header>
 
-        <section class="d-flex flex-column flex-lg-row justify-content-center m-5 gap-5">
-            <div class="flex-fill text-center">
-                <h3 class="display-6 fw-bold">Delegate Registration Form</h3>
-                <a href="https://forms.gle/kVeEmFsPWYQbbc7h6" class="btn btn-primary btn-lg fs-3 px-4 py-3">Register as Delegate</a>
-            </div>
-            <div class="flex-fill text-center">
-                <h3 class="display-6 fw-bold">Group Delegation Registration Form</h3>
-                <a href="https://forms.gle/6KN5jhVaVtn29kqbA" class="btn btn-primary btn-lg fs-3 px-4 py-3">Register as Group</a>
-            </div>
-            <div class="flex-fill text-center">
-                <h3 class="display-6 fw-bold">Observer Registration Form</h3>
-                <a href="https://forms.gle/GD2rnHb9WmWiBzrGA" class="btn btn-primary btn-lg fs-3 px-4 py-3">Register as Observer</a>
-            </div>
-        </section>
+    <!-- Registration Header -->
+    <section class="text-center py-16 bg-white">
+        <h3 class="text-4xl md:text-5xl font-extrabold tracking-tight text-black">
+            Register for SUNMUN 2026
+        </h3>
+    </section>
 
-        <footer class="text-center text-lg-start py-3">
-            <div class="container">
-                <!-- SUNMUN 2025 Footer Title -->
-                <div class="mb-3">
-                    <p class="mb-0 fw-bold text-center">SUNMUN 2025</p>
-                    <p class="mb-0 fw-bold tips text-center">Click on our Instagram and email to learn more</p>
+    <!-- Pricing & Matrix Section -->
+    <section class="text-center py-20 px-4 main-bg-colour">
+        <div class="container mx-auto">
+            <h3 class="text-3xl md:text-4xl font-bold mb-12 text-black">Pricing & Registration Window</h3>
+            
+            <div class="flex flex-col md:flex-row gap-8 justify-center items-stretch max-w-6xl mx-auto">
+                <!-- Dais Registration Card (Open) -->
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <div class="w-full max-w-[500px] aspect-[4/3] bg-white/80 text-black rounded-2xl shadow-xl flex flex-col justify-center items-center p-8 transition-transform hover:scale-[1.02]">
+                        <h3 class="text-3xl md:text-4xl font-bold mb-4 uppercase">Dais Registration</h3>
+                        <p class="text-2xl italic font-medium opacity-90">Dates</p>
+                    </div>
                 </div>
-                <!-- Address, Social Media, and Email -->
-                <div class="row text-center text-md-start flex-column flex-md-row">
-                    <!-- Address -->
-                    <div class="col-12 col-md-4 mb-3">
-                        <p class="mb-0 address">5, Jalan University, Bandar Sunway,</p>
-                        <p class="mb-0 address">47500 Subang Jaya, Selangor.</p>
-                        
-                    </div>
-                    <!-- Social Media -->
-                    <div class="col-12 col-md-4 mb-3 text-center">
-                        <a href="https://www.instagram.com/sunwaymun" target="_blank">
-                            <img src="Images/instagram_logo.png" alt="Instagram" style="width: 40px; height: 40px;">
-                        </a>
-                    </div>
-                    <!-- Email -->
-                    <div class="col-12 col-md-4 text-center text-md-end">
-                        <p class="mb-0 email">Email: <a href="mailto:sunwaymun@gmail.com" class="footer-link text-black">sunwaymun@gmail.com</a></p>
+
+                <!-- Delegate Registration Card -->
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <div class="w-full max-w-[500px] aspect-[4/3] bg-white/80 text-black rounded-2xl shadow-xl flex flex-col justify-center items-center p-8 transition-transform hover:scale-[1.02]">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-2 uppercase">Delegate Registration</h3>
+                        <h3 class="text-2xl md:text-3xl font-bold mb-2 uppercase">Group Delegation</h3>
+                        <h3 class="text-2xl md:text-3xl font-bold mb-6 uppercase">Observer Registration</h3>
+                        <div class="space-y-2">
+                            <p class="text-lg md:text-xl italic font-semibold">Normal: Dates</p>
+                            <p class="text-lg md:text-xl italic font-semibold">Late: Dates</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
 
-        <!-- Bootstrap Bundle with Popper -->
-        <script src="bootstrap-5.3.4-dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+        <!-- Country Matrix CTA -->
+        <div class="container mx-auto mt-20">
+            <h3 class="text-3xl md:text-4xl font-bold mb-8 text-black">Country Matrix</h3>
+            <a href="#" 
+            class="inline-block px-10 py-5 text-2xl font-bold bg-white text-blue-600 rounded-xl shadow-lg border-2 border-transparent hover:border-blue-600 hover:bg-blue-50 transition-all duration-300">
+                View Country Matrix
+            </a>
+        </div>
+    </section>
+
+    <!-- Form Links Section -->
+    <section class="flex flex-col lg:flex-row justify-center items-stretch my-20 px-6 gap-10 max-w-7xl mx-auto">
+        <!-- Delegate Form -->
+        <div class="flex-1 text-center flex flex-col items-center justify-between p-8 rounded-2xl bg-gray-50 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="text-2xl md:text-3xl font-bold mb-8 text-black h-full flex items-center">Delegate Registration Form</h3>
+            <a href="#" 
+            class="w-full py-4 text-xl font-bold default-button-style rounded-xl hover:scale-105 transition-all shadow-lg shadow-blue-200">
+                Register as Delegate
+            </a>
+        </div>
+
+        <!-- Group Form -->
+        <div class="flex-1 text-center flex flex-col items-center justify-between p-8 rounded-2xl bg-gray-50 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="text-2xl md:text-3xl font-bold mb-8 text-black h-full flex items-center">Group Delegation Registration Form</h3>
+            <a href="#" 
+            class="w-full py-4 text-xl font-bold default-button-style rounded-xl hover:scale-105 transition-all shadow-lg shadow-blue-200">
+                Register as Group
+            </a>
+        </div>
+
+        <!-- Observer Form -->
+        <div class="flex-1 text-center flex flex-col items-center justify-between p-8 rounded-2xl bg-gray-50 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="text-2xl md:text-3xl font-bold mb-8 text-black h-full flex items-center">Observer Registration Form</h3>
+            <a href="#" 
+            class="w-full py-4 text-xl font-bold default-button-style rounded-xl hover:scale-105 transition-all shadow-lg shadow-blue-200">
+                Register as Observer
+            </a>
+        </div>
+    </section>
+
+    <footer class="main-bg-colour py-10">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-6">
+                <p class="text-3xl md:text-4xl font-bold uppercase tracking-wide">SUNMUN 2026</p>
+                <p class="text-sm font-bold opacity-70 mt-1">Click on our Instagram and email to learn more</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="text-sm md:text-left flex-1">
+                    <p>5, Jalan University, Bandar Sunway,</p>
+                    <p>47500 Subang Jaya, Selangor.</p>
+                </div>
+
+                <div class="flex-1 flex justify-center">
+                    <a href="https://www.instagram.com/sunwaymun" target="_blank" class="transition-transform hover:scale-110">
+                        <img src="Images/instagram_logo.png" alt="Instagram" class="w-10 h-10">
+                    </a>
+                </div>
+
+                <div class="text-sm md:text-right flex-1">
+                    <p>Email: <a href="mailto:sunwaymun@gmail.com" class="font-semibold hover:underline">sunwaymun@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/navbar.js"></script>
+</body>
 </html>
