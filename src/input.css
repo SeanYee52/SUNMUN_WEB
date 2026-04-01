@@ -1,18 +1,35 @@
 @import "tailwindcss";
+@font-face {
+    font-family: Pencilant;
+    src: url('https://fonts.cdnfonts.com/s/106526/Pencilant Script.woff') format('woff');
+}
 
 .main-bg-colour {
-    background-color: #ffdcdf;
+    background-color: #a69a69;
+    color: white;
 }
 
 .default-button-style {
-    background-color: #ffdcdf;
+    background-color: #a69a69;
+    color: white;
 }
 
 .default-button-style:hover {
-    background-color: #f5c6c8;
+    background-color: #8a7d5c;
+    color: white;
 }
 
-body { font-family: 'Open Sans', sans-serif; }
+h1, h2 {
+    font-family: 'Source Serif 4', serif;
+}
+
+h3, h4, h5, h6 {
+    font-family: 'Pencilant', sans-serif;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
 
 #theme { font-family: 'Futura', sans-serif; }
 
@@ -20,7 +37,7 @@ body { font-family: 'Open Sans', sans-serif; }
 
 .nav-link-grow::after {
     content: ''; position: absolute; left: 0; bottom: -2px;
-    width: 0; height: 2px; background-color: black;
+    width: 0; height: 2px; background-color: white;
     transition: width 0.3s ease-in-out;
 }
 

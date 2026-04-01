@@ -17,19 +17,18 @@
 <body class="bg-white text-black">
 
     <!-- Header -->
-    <header id="header" class="h-[20vh] text-center py-2 bg-[url('../Images/header_banner.png')] bg-cover bg-center text-white">
-        <img src="Images/logo.png" alt="SUNMUN Logo" class="max-h-[12vh] mx-auto mb-2">
+    <header id="header" class="flex flex-col justify-end h-[20vh] text-center py-2 bg-[linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../Images/header_banner.png')] bg-cover bg-center text-white">
+        <!-- <img src="Images/logo.png" alt="SUNMUN Logo" class="max-h-[12vh] mx-auto mb-2"> -->
 
-    
         <nav class="container mx-auto px-4">
 
             <nav class="hidden md:block container mx-auto px-4">
                 <div class="flex flex-wrap justify-center gap-2 md:gap-8 text-xl md:text-3xl">
-                    <a href="index.html" class="w-1/5 nav-link-grow px-4 py-2 text-black font-semibold">Home</a>
-                    <a href="councils.html" class="w-1/5 nav-link-grow px-4 py-2 text-black font-semibold">Councils</a>
-                    <a href="registration.html" class="w-1/5 nav-link-grow px-4 py-2 text-black font-semibold outline outline-3 outline-black">Registration</a>
-                    <a href="resources.html" class="w-1/5 nav-link-grow px-4 py-2 text-black font-semibold hidden">Resources</a>
-                    <a href="merchandise.html" class="w-1/5 nav-link-grow px-4 py-2 text-black font-semibold hidden">Merchandise</a>
+                    <a href="index.html" class="w-1/5 nav-link-grow px-4 py-2 text-white font-semibold">Home</a>
+                    <a href="councils.html" class="w-1/5 nav-link-grow px-4 py-2 text-white font-semibold">Councils</a>
+                    <a href="registration.html" class="w-1/5 nav-link-grow px-4 py-2 text-white font-semibold  outline outline-3 outline-white">Registration</a>
+                    <a href="resources.html" class="w-1/5 nav-link-grow px-4 py-2 text-white font-semibold hidden">Resources</a>
+                    <a href="merchandise.html" class="w-1/5 nav-link-grow px-4 py-2 text-white font-semibold hidden">Merchandise</a>
                 </div>
             </nav>
 
@@ -67,15 +66,15 @@
 
     <!-- Registration Header -->
     <section class="text-center py-16 bg-white">
-        <h3 class="text-4xl md:text-5xl font-extrabold tracking-tight text-black">
+        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-black">
             Register for SUNMUN 2026
-        </h3>
+        </h2>
     </section>
 
     <!-- Pricing & Matrix Section -->
     <section class="text-center py-20 px-4 main-bg-colour">
         <div class="container mx-auto">
-            <h3 class="text-3xl md:text-4xl font-bold mb-12 text-black">Pricing & Registration Window</h3>
+            <h3 class="text-3xl md:text-4xl font-bold mb-12">Pricing & Registration Window</h3>
             
             <div class="flex flex-col md:flex-row gap-8 justify-center items-stretch max-w-6xl mx-auto">
                 <!-- Dais Registration Card (Open) -->
@@ -103,7 +102,7 @@
 
         <!-- Country Matrix CTA -->
         <div class="container mx-auto mt-20">
-            <h3 class="text-3xl md:text-4xl font-bold mb-8 text-black">Country Matrix</h3>
+            <h3 class="text-3xl md:text-4xl font-bold mb-8">Country Matrix</h3>
             <a href="#" 
             class="inline-block px-10 py-5 text-2xl font-bold bg-white text-blue-600 rounded-xl shadow-lg border-2 border-transparent hover:border-blue-600 hover:bg-blue-50 transition-all duration-300">
                 View Country Matrix
@@ -141,9 +140,19 @@
         </div>
 
         <!-- Dais Form -->
-         <div class="flex-1 text-center flex flex-col items-center justify-between p-8 md:mx-10 lg:mx-30 rounded-2xl bg-gray-50 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-            <h3 class="text-2xl md:text-3xl font-bold mb-8 text-black flex items-center">Dais Registration Form</h3>
-            <iframe name="myiFrame" class="h-[80vh] aspect-4/3" src="https://docs.google.com/forms/d/e/1FAIpQLSdczkpynecAAMmd9WTc6a2FySMpMeuCk2hlpVE7CYsEh9MQlw/viewform?embedded=true" marginwidth="0" marginheight="0"></iframe>
+        <div class="flex-1 text-center flex flex-col items-center justify-between p-2 md:mx-10 lg:mx-30 rounded-2xl main-bg-colour border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="text-2xl md:text-3xl font-bold mb-8 flex items-center">Dais Registration Form</h3>
+            
+            <!-- Added 'items-center' to center the contents -->
+            <div class="h-[90vh] w-fit flex flex-col items-center bg-gray-50 p-4 rounded-lg shadow-lg">
+                
+                <!-- Banner: Set to full width but capped at 640px (Google Form standard width) -->
+                <img src=".\Images\form_banner.png" class="w-full max-w-[640px] h-auto mb-5 rounded-lg object-cover">
+                
+                <!-- Iframe: Also capped at 640px so the edges align perfectly with the banner -->
+                <iframe name="myiFrame" class="w-full max-w-[700px] flex-1 border-0" src="https://docs.google.com/forms/d/e/1FAIpQLSdczkpynecAAMmd9WTc6a2FySMpMeuCk2hlpVE7CYsEh9MQlw/viewform?embedded=true" marginwidth="0" marginheight="0"></iframe>
+                
+            </div>
         </div>
     </section>
 
