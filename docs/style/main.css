@@ -47,6 +47,8 @@
     --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
+    --text-7xl: 4.5rem;
+    --text-7xl--line-height: 1;
     --text-8xl: 6rem;
     --text-8xl--line-height: 1;
     --font-weight-medium: 500;
@@ -378,12 +380,6 @@
   .aspect-1\/1 {
     aspect-ratio: 1/1;
   }
-  .aspect-2\/3 {
-    aspect-ratio: 2/3;
-  }
-  .aspect-3\/3 {
-    aspect-ratio: 3/3;
-  }
   .aspect-4\/3 {
     aspect-ratio: 4/3;
   }
@@ -393,56 +389,11 @@
   .h-1 {
     height: calc(var(--spacing) * 1);
   }
-  .h-1\/10 {
-    height: calc(1 / 10 * 100%);
-  }
-  .h-2 {
-    height: calc(var(--spacing) * 2);
-  }
-  .h-2\/10 {
-    height: calc(2 / 10 * 100%);
-  }
-  .h-3 {
-    height: calc(var(--spacing) * 3);
-  }
-  .h-3\/20 {
-    height: calc(3 / 20 * 100%);
-  }
-  .h-4 {
-    height: calc(var(--spacing) * 4);
-  }
-  .h-4\/20 {
-    height: calc(4 / 20 * 100%);
-  }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
-  .h-8 {
-    height: calc(var(--spacing) * 8);
-  }
-  .h-8\/10 {
-    height: calc(8 / 10 * 100%);
-  }
-  .h-9 {
-    height: calc(var(--spacing) * 9);
-  }
-  .h-9\/10 {
-    height: calc(9 / 10 * 100%);
-  }
   .h-10 {
     height: calc(var(--spacing) * 10);
-  }
-  .h-16 {
-    height: calc(var(--spacing) * 16);
-  }
-  .h-16\/20 {
-    height: calc(16 / 20 * 100%);
-  }
-  .h-17 {
-    height: calc(var(--spacing) * 17);
-  }
-  .h-17\/20 {
-    height: calc(17 / 20 * 100%);
   }
   .h-32 {
     height: calc(var(--spacing) * 32);
@@ -570,8 +521,8 @@
   .max-w-7xl {
     max-width: var(--container-7xl);
   }
-  .max-w-\[0px\] {
-    max-width: 0px;
+  .max-w-\[7px\] {
+    max-width: 7px;
   }
   .max-w-\[250px\] {
     max-width: 250px;
@@ -582,14 +533,20 @@
   .max-w-\[500px\] {
     max-width: 500px;
   }
+  .max-w-\[600px\] {
+    max-width: 600px;
+  }
   .max-w-\[640px\] {
     max-width: 640px;
   }
-  .max-w-\[680px\] {
-    max-width: 680px;
-  }
   .max-w-\[700px\] {
     max-width: 700px;
+  }
+  .max-w-\[720px\] {
+    max-width: 720px;
+  }
+  .max-w-\[1000px\] {
+    max-width: 1000px;
   }
   .max-w-md {
     max-width: var(--container-md);
@@ -626,9 +583,6 @@
   }
   .items-center {
     align-items: center;
-  }
-  .items-end {
-    align-items: flex-end;
   }
   .items-stretch {
     align-items: stretch;
@@ -742,8 +696,41 @@
   .border-white {
     border-color: var(--color-white);
   }
+  .bg-\[\#\#126A9F\] {
+    background-color: ##126A9F;
+  }
+  .bg-\[\#\#eb1c2c\] {
+    background-color: ##eb1c2c;
+  }
+  .bg-\[\#007dbb\] {
+    background-color: #007dbb;
+  }
+  .bg-\[\#8f1737\] {
+    background-color: #8f1737;
+  }
+  .bg-\[\#126A9F\] {
+    background-color: #126A9F;
+  }
+  .bg-\[\#00689D\] {
+    background-color: #00689D;
+  }
+  .bg-\[\#01558a\] {
+    background-color: #01558a;
+  }
+  .bg-\[\#48773d\] {
+    background-color: #48773d;
+  }
   .bg-\[\#c21f33\] {
     background-color: #c21f33;
+  }
+  .bg-\[\#eb1c2c\] {
+    background-color: #eb1c2c;
+  }
+  .bg-\[\#ef402a\] {
+    background-color: #ef402a;
+  }
+  .bg-\[\#fdb713\] {
+    background-color: #fdb713;
   }
   .bg-black {
     background-color: var(--color-black);
@@ -772,11 +759,11 @@
   .bg-\[linear-gradient\(rgba\(0\,0\,0\,0\.1\)\,rgba\(0\,0\,0\,0\.1\)\)\,url\(\'\.\.\/Images\/sunway_uni\.jpg\'\)\] {
     background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('../Images/sunway_uni.jpg');
   }
+  .bg-\[linear-gradient\(rgba\(0\,0\,0\,0\.3\)\,rgba\(0\,0\,0\,0\.3\)\)\,url\(\'\.\.\/Images\/form_banner\.jpg\'\)\] {
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../Images/form_banner.jpg');
+  }
   .bg-\[linear-gradient\(rgba\(0\,0\,0\,0\.3\)\,rgba\(0\,0\,0\,0\.3\)\)\,url\(\'\.\.\/Images\/header_banner\.png\'\)\] {
     background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../Images/header_banner.png');
-  }
-  .bg-\[url\(\'\.\.\/Images\/header_banner\.png\'\)\] {
-    background-image: url('../Images/header_banner.png');
   }
   .bg-\[url\(\'\.\.\/Images\/sunway_uni\.jpg\'\)\] {
     background-image: url('../Images/sunway_uni.jpg');
@@ -1396,6 +1383,12 @@
       line-height: var(--tw-leading, var(--text-6xl--line-height));
     }
   }
+  .md\:text-7xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-7xl);
+      line-height: var(--tw-leading, var(--text-7xl--line-height));
+    }
+  }
   .md\:text-8xl {
     @media (width >= 48rem) {
       font-size: var(--text-8xl);
@@ -1454,6 +1447,11 @@
   .lg\:w-3\/4 {
     @media (width >= 64rem) {
       width: calc(3 / 4 * 100%);
+    }
+  }
+  .lg\:grid-cols-2 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   .lg\:grid-cols-3 {

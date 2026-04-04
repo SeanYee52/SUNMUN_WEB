@@ -2,33 +2,34 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <title>Homepage | SUNMUN 2026</title>
+    <title>UN Energy | SUNMUN 2026</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Tailwind CSS CDN -->
-    <link rel="stylesheet" href="style/main.css"></script>
+    <link rel="stylesheet" href="../style/main.css">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="Images/favicon.png">
+    <link rel="icon" type="image/png" href="../Images/favicon.png">
 </head>
 <body class="bg-white text-black">
 
     <!-- Header -->
     <header id="header" class="flex flex-col justify-end h-[20vh] text-center py-2 bg-[linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../Images/form_banner.jpg')] bg-cover bg-center text-white">
-        <!-- <img src="Images/logo.png" alt="SUNMUN Logo" class="max-h-[12vh] mx-auto mb-2"> -->
+        <!-- <img src="..Images/logo.png" alt="SUNMUN Logo" class="max-h-[12vh] mx-auto mb-2"> -->
 
+    
         <nav class="container mx-auto px-4">
 
-            <nav class="hidden md:block container mx-auto px-4">
+            <nav class="hidden md:block container mx-auto px-4 text-white">
                 <div class="flex flex-wrap justify-center gap-2 md:gap-8 text-xl md:text-3xl">
-                    <a href="index.html" class="w-1/5 nav-link-grow px-4 py-2 text-white font-semibold">Home</a>
-                    <a href="councils.html" class="w-1/5 nav-link-grow px-4 py-2 text-white font-semibold outline outline-3 outline-white">Councils</a>
-                    <a href="registration.html" class="w-1/5 nav-link-grow px-4 py-2 text-white font-semibold">Registration</a>
-                    <a href="resources.html" class="w-1/5 nav-link-grow px-4 py-2 text-white font-semibold hidden">Resources</a>
-                    <a href="merchandise.html" class="w-1/5 nav-link-grow px-4 py-2 text-white font-semibold hidden">Merchandise</a>
+                    <a href="../index.html" class="w-1/5 nav-link-grow px-4 py-2 font-semibold">Home</a>
+                    <a href="../councils.html" class="w-1/5 nav-link-grow px-4 py-2 font-semibold outline outline-3 outline-white">Councils</a>
+                    <a href="../registration.html" class="w-1/5 nav-link-grow px-4 py-2 font-semibold">Registration</a>
+                    <a href="../resources.html" class="w-1/5 nav-link-grow px-4 py-2 font-semibold hidden">Resources</a>
+                    <a href="../merchandise.html" class="w-1/5 nav-link-grow px-4 py-2 font-semibold hidden">Merchandise</a>
                 </div>
             </nav>
 
@@ -56,32 +57,37 @@
                         transition-all duration-500 ease-in-out">
                 
                 <div class="flex flex-col md:flex-row w-full items-center gap-4 py-8 md:py-0">
-                    <a href="index.html" class="w-4/5 md:w-auto nav-link-grow px-4 py-2 text-black font-semibold md:outline md:outline-3 md:outline-black">Home</a>
-                    <a href="councils.html" class="w-4/5 md:w-auto nav-link-grow px-4 py-2 text-black font-semibold">Councils</a>
-                    <a href="registration.html" class="w-4/5 md:w-auto nav-link-grow px-4 py-2 text-black font-semibold">Registration</a>
+                    <a href="../index.html" class="w-4/5 md:w-auto nav-link-grow px-4 py-2 text-black font-semibold md:outline md:outline-3 md:outline-black">Home</a>
+                    <a href="../councils.html" class="w-4/5 md:w-auto nav-link-grow px-4 py-2 text-black font-semibold">Councils</a>
+                    <a href="../registration.html" class="w-4/5 md:w-auto nav-link-grow px-4 py-2 text-black font-semibold">Registration</a>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Main ASEAN Wrapper -->
     <main class="flex flex-col items-center">
         
         <!-- Hero Section -->
         <section class="h-[90vh] w-full text-center flex flex-col justify-center items-center gap-6 bg-cover bg-center relative"
-                style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('./Images/CouncilImagePlaceholder.jpg');">
+                style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../Images/CouncilImagePlaceholder.jpg');">
             
-            <div class="reveal">
-                <img src="./Images/placeholder.svg" alt="Logo" class="w-32 md:w-48 mx-auto mb-6">
-                <h1 class="font-bold text-5xl md:text-8xl text-white drop-shadow-2xl uppercase tracking-tighter">
-                    Generic UN Council
+            <div class="reveal text-white">
+                <img src="../Images/placeholder.svg" alt="Logo" class="w-32 md:w-48 mx-auto mb-6">
+                <h1 class="font-bold text-5xl md:text-7xl drop-shadow-2xl uppercase tracking-tighter">
+                    United Nations - Energy
                 </h1>
-                <p class="text-xl md:text-2xl text-white mt-4 italic font-semibold">Format: HMUN</p>
+                <p class="hidden text-center text-2xl md:text-3xl">
+                    Addressing the Implications of Non-Essential Product Overconsumption on Marine Ecosystems
+                </p>
+                <p class="text-center text-2xl md:text-3xl">
+                    Concerning the Consequences of AI Data Centres Near Residential Areas
+                </p>
+                <p class="text-xl md:text-2xl mt-4 italic font-semibold">Format: THIMUN</p>
             </div>
         </section>
 
         <!-- Council Description & SDG (Seamless Transition) -->
-        <div class="w-full bg-[#c21f33] text-white relative">
+        <div class="w-full bg-[#fdb713] text-white relative">
             <!-- Council Background -->
             <section id="council_desc" class="min-h-[50vh] flex flex-col md:flex-row gap-12 px-8 md:px-20 py-24 items-center">
                 <div class="w-full lg:w-3/4 reveal">
@@ -89,19 +95,23 @@
                     <p class="text-xl md:text-2xl leading-relaxed">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
             </section>
 
             <!-- SDG Section with Curved/Seamless Blend -->
-            <section id="sdg" class="min-h-[50vh] flex flex-col md:flex-row gap-12 px-8 md:px-20 py-24 items-center bg-[#c21f33] text-white">
+            <section id="sdg" class="min-h-[50vh] flex flex-col md:flex-row gap-12 px-8 md:px-20 py-24 items-center text-white">
                 <div class="w-full md:w-1/3 reveal">
-                    <img src="./Images/sdg_4.svg" alt="SDG 4" class="w-full max-w-[250px] mx-auto rounded-xl">
+                    <img src="../Images/sdg_7.svg" alt="SDG 7" class="w-full max-w-[400px] mx-auto rounded-xl">
                 </div>
                 <div class="w-full md:w-2/3 reveal">
                     <p class="text-xl md:text-2xl leading-relaxed opacity-90">
-                        Our focus on Sustainable Development Goal 4 ensures that our debate emphasizes quality education 
-                        and the empowerment of youth through diplomacy.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
             </section>
@@ -111,23 +121,23 @@
         <section id="combined_agendas" class="w-full min-h-screen text-black flex flex-col md:flex-row">
             <!-- Agenda 1 -->
             <div class="w-full md:w-1/2 h-[70vh] md:h-auto relative bg-cover bg-center flex flex-col items-center justify-center text-center p-8 group overflow-hidden">
-                <img src="./Images/placeholder.svg" alt="Logo" class="w-24 md:w-48 mx-auto mb-6 opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                <img src="../Images/placeholder.svg" alt="Logo" class="w-24 md:w-48 mx-auto mb-6 opacity-80 group-hover:opacity-100 transition-opacity duration-500">
                 <div class="reveal relative z-10">
                     <h3 class="text-4xl md:text-6xl font-bold mb-4">Agenda 1</h3>
-                    <p class="text-lg md:text-xl font-medium max-w-md">Promoting Model United Nations in the Indo-Pacific Region</p>
+                    <p class="text-lg md:text-xl font-medium max-w-md">TBC</p>
                     <div class="w-16 h-1 bg-white mx-auto mt-6"></div>
                 </div>
             </div>
 
             <!-- Agenda 2 (Vertical separator on desktop) -->
-            <div class="hidden md:block w-px bg-black/50 z-10"></div>
+            <div class="hidden md:block w-px bg-black/50 z-10 my-10"></div>
 
             <!-- Agenda 2 -->
             <div class="w-full md:w-1/2 h-[70vh] md:h-auto relative bg-cover bg-center flex flex-col items-center justify-center text-center p-8 group overflow-hidden">
-                <img src="./Images/placeholder.svg" alt="Logo" class="w-24 md:w-48 mx-auto mb-6 opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                <img src="../Images/placeholder.svg" alt="Logo" class="w-24 md:w-48 mx-auto mb-6 opacity-80 group-hover:opacity-100 transition-opacity duration-500">
                 <div class="reveal relative z-10">
-                    <h3 class="text-4xl md:text-6xl font-boldmb-4">Agenda 2</h3>
-                    <p class="text-lg md:text-xlfont-medium max-w-md">Ensuring Students Have a Voice in Global Affairs</p>
+                    <h3 class="text-4xl md:text-6xl font-bold mb-4">Agenda 2</h3>
+                    <p class="text-lg md:text-xl font-medium max-w-md">Concerning the Consequences of AI Data Centres Near Residential Areas</p>
                     <div class="w-16 h-1 bg-white mx-auto mt-6"></div>
                 </div>
             </div>
@@ -154,14 +164,14 @@
             <h2 class="text-center text-4xl md:text-6xl font-bold mb-16 uppercase reveal">Meet the Dais</h2>
             <div class="flex flex-col md:flex-row items-center justify-center gap-0 w-full reveal">
                 <div class="w-full md:w-1/2 lg:w-1/3 overflow-hidden">
-                    <img src="./Images/DaisToBeAnnounced.jpg" class="w-full grayscale hover:grayscale-0 transition-all duration-500" alt="Dais 1">
+                    <img src="../Images/DaisToBeAnnounced.jpg" class="w-full grayscale hover:grayscale-0 transition-all duration-500" alt="Dais 1">
                     <div class="p-6 text-center">
                         <h3 class="text-2xl font-bold">Dais Name</h3>
                         <p class="text-gray-500 italic">Chair</p>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 lg:w-1/3 overflow-hidden border-l-5 border-gray-100">
-                    <img src="./Images/DaisToBeAnnounced.jpg" class="w-full grayscale hover:grayscale-0 transition-all duration-500" alt="Dais 2">
+                    <img src="../Images/DaisToBeAnnounced.jpg" class="w-full grayscale hover:grayscale-0 transition-all duration-500" alt="Dais 2">
                     <div class="p-6 text-center">
                         <h3 class="text-2xl font-bold">Dais Name</h3>
                         <p class="text-gray-500 italic">Co-Chair</p>
@@ -198,7 +208,7 @@
 
                 <div class="flex-1 flex justify-center">
                     <a href="https://www.instagram.com/sunwaymun" target="_blank" class="transition-transform hover:scale-110">
-                        <img src="Images/instagram_logo_2022.svg" alt="Instagram" class="w-10 h-10">
+                        <img src="../Images/instagram_logo_2022.svg" alt="Instagram" class="w-10 h-10">
                     </a>
                 </div>
 
@@ -209,25 +219,7 @@
         </div>
     </footer>
 
-    <script src="navbar.js"></script>
-    <script>
-        // Scroll Reveal Logic
-        const revealElements = document.querySelectorAll('.reveal');
-        
-        const revealOnScroll = () => {
-            const triggerBottom = window.innerHeight * 0.85;
-            
-            revealElements.forEach(el => {
-                const elTop = el.getBoundingClientRect().top;
-                if (elTop < triggerBottom) {
-                    el.classList.add('active');
-                }
-            });
-        };
-
-        window.addEventListener('scroll', revealOnScroll);
-        // Trigger once on load in case elements are already in view
-        window.addEventListener('load', revealOnScroll);
-    </script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/scroll_reveal.js"></script>
 </body>
 </html>
