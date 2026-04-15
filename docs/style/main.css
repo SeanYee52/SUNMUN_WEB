@@ -384,12 +384,6 @@
   .aspect-1\/1 {
     aspect-ratio: 1/1;
   }
-  .aspect-2\/4 {
-    aspect-ratio: 2/4;
-  }
-  .aspect-3\/4 {
-    aspect-ratio: 3/4;
-  }
   .aspect-\[4\/3\] {
     aspect-ratio: 4/3;
   }
@@ -549,12 +543,6 @@
   .max-w-md {
     max-width: var(--container-md);
   }
-  .min-w-md {
-    min-width: var(--container-md);
-  }
-  .min-w-sm {
-    min-width: var(--container-sm);
-  }
   .min-w-xs {
     min-width: var(--container-xs);
   }
@@ -565,6 +553,9 @@
     flex-grow: 1;
   }
   .flex-grow-1 {
+    flex-grow: 1;
+  }
+  .grow {
     flex-grow: 1;
   }
   .border-collapse {
@@ -852,6 +843,9 @@
   }
   .text-center {
     text-align: center;
+  }
+  .text-justify {
+    text-align: justify;
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -1394,6 +1388,12 @@
       line-height: var(--tw-leading, var(--text-8xl--line-height));
     }
   }
+  .md\:text-lg {
+    @media (width >= 48rem) {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+  }
   .md\:text-xl {
     @media (width >= 48rem) {
       font-size: var(--text-xl);
@@ -1448,14 +1448,9 @@
       width: calc(3 / 4 * 100%);
     }
   }
-  .lg\:grid-cols-2 {
+  .lg\:grid-cols-4 {
     @media (width >= 64rem) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  .lg\:grid-cols-3 {
-    @media (width >= 64rem) {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
   .lg\:flex-row {
