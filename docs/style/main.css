@@ -239,6 +239,9 @@
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
+  .end {
+    inset-inline-end: var(--spacing);
+  }
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
@@ -377,6 +380,9 @@
   .inline-block {
     display: inline-block;
   }
+  .table {
+    display: table;
+  }
   .aspect-1\/1 {
     aspect-ratio: 1/1;
   }
@@ -458,8 +464,14 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/5 {
     width: calc(1 / 5 * 100%);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
   }
   .w-4\/5 {
     width: calc(4 / 5 * 100%);
@@ -542,17 +554,26 @@
   .flex-1 {
     flex: 1;
   }
+  .flex-grow {
+    flex-grow: 1;
+  }
   .flex-grow-1 {
     flex-grow: 1;
   }
   .grow {
     flex-grow: 1;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .origin-left {
     transform-origin: 0;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .resize {
+    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -734,6 +755,36 @@
   }
   .bg-\[url\(\'\.\.\/Images\/sunway_uni\.jpg\'\)\] {
     background-image: url('../Images/sunway_uni.jpg');
+  }
+  .bg-\[url\(\.\.\/Images\/fao_bg\.png\)\] {
+    background-image: url(../Images/fao_bg.png);
+  }
+  .bg-\[url\(\.\.\/Images\/fao_bg_mobile\.png\)\] {
+    background-image: url(../Images/fao_bg_mobile.png);
+  }
+  .bg-\[url\(\.\.\/Images\/fcc_bg_mobile\.png\)\] {
+    background-image: url(../Images/fcc_bg_mobile.png);
+  }
+  .bg-\[url\(\.\.\/Images\/hdrc_bg_mobile\.png\)\] {
+    background-image: url(../Images/hdrc_bg_mobile.png);
+  }
+  .bg-\[url\(\.\.\/Images\/imo_bg_mobile\.png\)\] {
+    background-image: url(../Images/imo_bg_mobile.png);
+  }
+  .bg-\[url\(\.\.\/Images\/ipc_bg_mobile\.png\)\] {
+    background-image: url(../Images/ipc_bg_mobile.png);
+  }
+  .bg-\[url\(\.\.\/Images\/un_energy_bg_mobile\.png\)\] {
+    background-image: url(../Images/un_energy_bg_mobile.png);
+  }
+  .bg-\[url\(\.\.\/Images\/unesco_bg_mobile\.png\)\] {
+    background-image: url(../Images/unesco_bg_mobile.png);
+  }
+  .bg-\[url\(\.\.\/Images\/unw_bg_mobile\.png\)\] {
+    background-image: url(../Images/unw_bg_mobile.png);
+  }
+  .bg-\[url\(\/img\/mountains\.jpg\)\] {
+    background-image: url(/img/mountains.jpg);
   }
   .bg-cover {
     background-size: cover;
@@ -929,6 +980,9 @@
   .italic {
     font-style: italic;
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .opacity-0 {
     opacity: 0%;
   }
@@ -997,6 +1051,14 @@
     --tw-grayscale: grayscale(100%);
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
+  .filter {
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
   .transition-all {
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -1048,6 +1110,13 @@
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         rotate: 6deg;
+      }
+    }
+  }
+  .group-hover\:border-black {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        border-color: var(--color-black);
       }
     }
   }
@@ -1287,6 +1356,51 @@
   .md\:bg-transparent {
     @media (width >= 48rem) {
       background-color: transparent;
+    }
+  }
+  .md\:bg-\[url\(\.\.\/Images\/fao_bg\.png\)\] {
+    @media (width >= 48rem) {
+      background-image: url(../Images/fao_bg.png);
+    }
+  }
+  .md\:bg-\[url\(\.\.\/Images\/fcc_bg\.png\)\] {
+    @media (width >= 48rem) {
+      background-image: url(../Images/fcc_bg.png);
+    }
+  }
+  .md\:bg-\[url\(\.\.\/Images\/hdrc_bg\.png\)\] {
+    @media (width >= 48rem) {
+      background-image: url(../Images/hdrc_bg.png);
+    }
+  }
+  .md\:bg-\[url\(\.\.\/Images\/imo_bg\.png\)\] {
+    @media (width >= 48rem) {
+      background-image: url(../Images/imo_bg.png);
+    }
+  }
+  .md\:bg-\[url\(\.\.\/Images\/ipc_bg\.png\)\] {
+    @media (width >= 48rem) {
+      background-image: url(../Images/ipc_bg.png);
+    }
+  }
+  .md\:bg-\[url\(\.\.\/Images\/un_energy_bg\.png\)\] {
+    @media (width >= 48rem) {
+      background-image: url(../Images/un_energy_bg.png);
+    }
+  }
+  .md\:bg-\[url\(\.\.\/Images\/unesco_bg\.png\)\] {
+    @media (width >= 48rem) {
+      background-image: url(../Images/unesco_bg.png);
+    }
+  }
+  .md\:bg-\[url\(\.\.\/Images\/unw_bg\.png\)\] {
+    @media (width >= 48rem) {
+      background-image: url(../Images/unw_bg.png);
+    }
+  }
+  .md\:bg-\[url\(\/img\/mountains\.jpg\)\] {
+    @media (width >= 48rem) {
+      background-image: url(/img/mountains.jpg);
     }
   }
   .md\:p-6 {
