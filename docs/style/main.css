@@ -749,6 +749,9 @@
   .bg-\[url\(\.\.\/Images\/fcc_bg_mobile\.png\)\] {
     background-image: url(../Images/fcc_bg_mobile.png);
   }
+  .bg-\[url\(\.\.\/Images\/hdr_bg_mobile\.png\)\] {
+    background-image: url(../Images/hdr_bg_mobile.png);
+  }
   .bg-\[url\(\.\.\/Images\/hdrc_bg_mobile\.png\)\] {
     background-image: url(../Images/hdrc_bg_mobile.png);
   }
@@ -1304,6 +1307,11 @@
   .md\:bg-\[url\(\.\.\/Images\/fcc_bg\.png\)\] {
     @media (width >= 48rem) {
       background-image: url(../Images/fcc_bg.png);
+    }
+  }
+  .md\:bg-\[url\(\.\.\/Images\/hdr_bg\.png\)\] {
+    @media (width >= 48rem) {
+      background-image: url(../Images/hdr_bg.png);
     }
   }
   .md\:bg-\[url\(\.\.\/Images\/hdrc_bg\.png\)\] {
