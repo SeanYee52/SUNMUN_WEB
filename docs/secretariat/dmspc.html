@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <title>DMSPC | SUNMUN 2026</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Tailwind CSS CDN -->
+    <link rel="stylesheet" href="../style/main.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../Images/favicon.png">
+</head>
+<body class="bg-white text-black">
+
+    <!-- Header -->
+    <header id="header" class="flex flex-col justify-end h-[20vh] text-center py-2 bg-[linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../Images/form_banner.jpg')] bg-cover bg-center text-white">
+        <!-- <img src="Images/logo.png" alt="SUNMUN Logo" class="max-h-[12vh] mx-auto mb-2"> -->
+
+        <nav class="w-full mx-auto px-4">
+
+            <nav class="hidden md:block w-full mx-auto">
+                <div class="flex flex-wrap justify-center gap-2 md:gap-4 text-xl md:text-2l lg:text-3xl mb-2">
+                    <a href="../index.html" class="w-1/7 nav-link-grow py-2 text-white font-semibold">Home</a>
+                    <a href="../councils.html" class="w-1/7 nav-link-grow py-2 text-white font-semibold">Councils</a>
+                    <a href="../secretariat/eosg.html" class="w-1/7 nav-link-grow py-2 text-white font-semibold outline outline-3 outline-white">Secretariat</a>
+                </div>
+                <div class="flex flex-wrap justify-center gap-2 md:gap-4 text-xl md:text-2l lg:text-3xl mb-2">
+                    <a href="../registration.html" class="w-1/7 nav-link-grow py-2 text-white font-semibold">Registration</a>
+                    <a href="../resources.html" class="w-1/7 nav-link-grow py-2 text-white font-semibold">Resources</a>
+                    <a href="../merchandise.html" class="w-1/7 nav-link-grow py-2 text-white font-semibold">Merchandise</a>
+                    <a href="../keynote_speaker.html" class="w-1/7 nav-link-grow py-2 text-white font-semibold">Keynote Speaker</a>
+                </div>
+            </nav>
+
+            <!-- Animated Hamburger Button -->
+            <div class="md:hidden flex justify-end mb-2">
+                <button id="menu-toggle" class="relative group p-2 bg-white rounded-lg shadow-md focus:outline-none">
+                    <div class="w-6 h-5 flex flex-col justify-between items-center overflow-hidden">
+                        <span id="line1" class="w-full h-[3px] bg-black transform transition-all duration-300 origin-left"></span>
+                        <span id="line2" class="w-full h-[3px] bg-black transition-all duration-300"></span>
+                        <span id="line3" class="w-full h-[3px] bg-black transform transition-all duration-300 origin-left"></span>
+                    </div>
+                </button>
+            </div>
+
+            
+            <!-- Navigation Links with Slide/Fade Animation -->
+            <div id="nav-menu" 
+                class="md:hidden absolute z-5 md:relative left-0 w-full md:w-auto 
+                        bg-white md:bg-transparent flex-col md:flex-row 
+                        justify-center items-center gap-4 md:gap-8 text-xl md:text-3xl 
+                        shadow-2xl md:shadow-none border-b md:border-none border-gray-100
+                        /* Animation Classes */
+                        max-h-0 opacity-0 overflow-hidden pointer-events-none
+                        md:max-h-none md:opacity-100 md:pointer-events-auto
+                        transition-all duration-500 ease-in-out">
+                
+                <div class="flex flex-col md:flex-row w-full items-center gap-4 py-8 md:py-0">
+                    <a href="../index.html" class="w-4/5 md:w-auto nav-link-grow px-4 py-2 text-black font-semibold md:outline md:outline-3 md:outline-black">Home</a>
+                    <a href="../councils.html" class="w-4/5 md:w-auto nav-link-grow px-4 py-2 text-black font-semibold">Councils</a>
+                    <a href="../secretariat/eosg.html" class="w-4/5 md:w-auto nav-link-grow px-4 py-2 text-black font-semibold">Secretariat</a>
+                    <a href="../registration.html" class="w-4/5 md:w-auto nav-link-grow px-4 py-2 text-black font-semibold">Registration</a>
+                    <a href="../resources.html" class="w-4/5 md:w-auto nav-link-grow px-4 py-2 text-black font-semibold">Resources</a>
+                    <a href="../merchandise.html" class="w-4/5 md:w-auto nav-link-grow px-4 py-2 text-black font-semibold">Merchandise</a>
+                    <a href="../keynote_speaker.html" class="w-4/5 md:w-auto nav-link-grow px-4 py-2 text-black font-semibold">Keynote Speaker</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="text-center py-32 min-h-[80vh] flex flex-col justify-center items-center bg-[url('Images/UnderCon_icon.svg')] bg-cover bg-center">
+        <h1 class="text-5xl md:text-7xl font-bold">Page Under Construction</h1>
+        <p class="text-xl md:text-2xl mt-6 max-w-2xl">We are working hard to bring you the best experience. Please check back soon!</p>
+    </section>
+
+    <!-- Main Wrapper -->
+    <main class="flex flex-col items-center hidden">
+
+        <div class="container flex flex-row items-center justify-center gap-8 text-xl mx-auto my-10">
+            <a href="eosg.html" class="font-bold hover:underline outline outline-3 outline-white">EOSG</a>
+            <p>|</p>
+            <a href="dcam.html" class="font-bold hover:underline">DCAM</a>
+            <p>|</p>
+            <a href="dgc.html" class="font-bold hover:underline">DGC</a>
+            <p>|</p>
+            <a href="dmspc.html" class="font-bold underline">DMSPC</a>
+        </div>
+
+        <!-- Secretariat Pics, Position, Name, and Quote -->
+        <div class="w-full max-w-6xl mx-auto px-4 flex flex-col gap-12 my-10">
+
+            <h2 class="text-bold text-5xl text-center">Department of Management Strategy, Policy and Compliance</h2>
+
+            <!-- Placeholder Row 1 -->
+            <div class="flex flex-row h-48 md:h-64 w-full reveal">
+                <div class="h-full aspect-square bg-gray-200 flex-shrink-0">
+                    <img src="../Images/secretariat/asg_dmspc.jpg" alt="DMSPC" class="h-full w-full object-cover">
+                </div>
+                <div class="flex flex-col justify-center px-6">
+                    <h3 class="text-2xl md:text-3xl font-bold">Assistant Secretary-General for Management Strategy, Policy and Compliance</h3>
+                    <p class="text-xl md:text-2xl font-semibold mt-1">Ashwiniy a/p Sureash Kumar</p>
+                    <p class="text-sm md:text-base mt-2 italic">"Quote placeholder text."</p>
+                </div>
+            </div>
+
+            <!-- Placeholder Row 2 -->
+            <div class="flex flex-row h-48 md:h-64 w-full reveal">
+                <div class="h-full aspect-square bg-gray-200 flex-shrink-0">
+                    <img src="../Images/secretariat/hro_1.jpg" alt="DMSPC" class="h-full w-full object-cover">
+                </div>
+                <div class="flex flex-col justify-center px-6">
+                    <h3 class="text-2xl md:text-3xl font-bold">Human Resources Officer</h3>
+                    <p class="text-xl md:text-2xl font-semibold mt-1">Chew Jing Ern</p>
+                    <p class="text-sm md:text-base mt-2 italic">"The throne is where I am"</p>
+                </div>
+            </div>
+
+            <div class="flex flex-row h-48 md:h-64 w-full reveal">
+                <div class="h-full aspect-square bg-gray-200 flex-shrink-0">
+                    <img src="../Images/secretariat/hro_2.jpg" alt="DMSPC" class="h-full w-full object-cover">
+                </div>
+                <div class="flex flex-col justify-center px-6">
+                    <h3 class="text-2xl md:text-3xl font-bold">Human Resources Officer</h3>
+                    <p class="text-xl md:text-2xl font-semibold mt-1">Viel Chai Kai Xian</p>
+                    <p class="text-sm md:text-base mt-2 italic">"Bless you for your business!"</p>
+                </div>
+            </div>
+
+            <!-- Placeholder Row 3 -->
+            <div class="flex flex-row h-48 md:h-64 w-full reveal">
+                <div class="h-full aspect-square bg-gray-200 flex-shrink-0">
+                    <img src="../Images/secretariat/fbo_1.jpg" alt="DMSPC" class="h-full w-full object-cover">
+                </div>
+                <div class="flex flex-col justify-center px-6">
+                    <h3 class="text-2xl md:text-3xl font-bold">Finance and Budget Officer</h3>
+                    <p class="text-xl md:text-2xl font-semibold mt-1">Pransha Dhami</p>
+                    <p class="text-sm md:text-base mt-2 italic">"coffee is what you need"</p>
+                </div>
+            </div>
+
+            <div class="flex flex-row h-48 md:h-64 w-full reveal">
+                <div class="h-full aspect-square bg-gray-200 flex-shrink-0">
+                    <img src="../Images/secretariat/fbo_2.jpg" alt="DMSPC" class="h-full w-full object-cover">
+                </div>
+                <div class="flex flex-col justify-center px-6">
+                    <h3 class="text-2xl md:text-3xl font-bold">Finance and Budget Officer</h3>
+                    <p class="text-xl md:text-2xl font-semibold mt-1">Hui Chee</p>
+                    <p class="text-sm md:text-base mt-2 italic">"trust the process，your sweat and tears."</p>
+                </div>
+            </div>
+
+            <div class="flex flex-row h-48 md:h-64 w-full reveal">
+                <div class="h-full aspect-square bg-gray-200 flex-shrink-0">
+                    <img src="../Images/secretariat/icto.jpg" alt="DMSPC" class="h-full w-full object-cover">
+                </div>
+                <div class="flex flex-col justify-center px-6">
+                    <h3 class="text-2xl md:text-3xl font-bold">Information and Communications Technology Officer</h3>
+                    <p class="text-xl md:text-2xl font-semibold mt-1">Sean Yee Hou Yin</p>
+                    <p class="text-sm md:text-base mt-2 italic">"if you need a website or software hmu (i have cat pics too)"</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-bg-colour py-10">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-6">
+                <p class="text-3xl md:text-4xl font-bold uppercase tracking-wide">SUNMUN 2026</p>
+                <p class="text-sm font-bold opacity-70 mt-1">Click on our Instagram and email to learn more</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="text-sm md:text-left flex-1">
+                    <p>5, Jalan University, Bandar Sunway,</p>
+                    <p>47500 Subang Jaya, Selangor.</p>
+                </div>
+
+                <div class="flex-1 flex justify-center">
+                    <a href="https://www.instagram.com/sunwaymun" target="_blank" class="transition-transform hover:scale-110">
+                        <img src="../Images/instagram_logo_2022.svg" alt="Instagram" class="w-10 h-10">
+                    </a>
+                </div>
+
+                <div class="text-sm md:text-right flex-1">
+                    <p>Email: <a href="mailto:sunwaymun@gmail.com" class="font-semibold hover:underline">sunwaymun@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/navbar.js"></script>
+    <script src="../js/scroll_reveal.js"></script>
+</body>
+</html>
