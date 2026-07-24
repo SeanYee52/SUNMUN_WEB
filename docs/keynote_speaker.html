@@ -72,17 +72,37 @@
         </nav>
     </header>
 
-    <!-- Under Construction Section -->
-    <section class="text-center py-32 min-h-[80vh] flex flex-col justify-center items-center bg-[url('Images/UnderCon_icon.svg')] bg-cover bg-center">
-        <h1 class="text-5xl md:text-7xl font-bold">To Be Announced</h1>
-        <div class="w-full md:w-1/2 lg:w-1/3 overflow-hidden">
-            <img src="Images/DaisToBeAnnounced.jpg" class="w-full grayscale hover:grayscale-0 transition-all duration-500" alt="Dais 1">
-            <div class="p-6 text-center">
-                <h3 class="text-2xl font-bold hidden">TBA</h3>
-                <p class="text-gray-500 italic hidden">Chair</p>
+    <main class="flex flex-col items-center">
+        <section class="w-full py-20 bg-white text-black">
+            <h2 class="text-center text-4xl md:text-6xl font-bold mb-16 uppercase reveal">Keynote Speakers</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-2 xl:gap-4 w-full reveal">
+                <div class="w-full lg:w-4/5 mx-auto overflow-hidden border-white">
+                    <img src="./Images/keynote_speaker.png" class="w-full grayscale-25 hover:grayscale-0 transition-all duration-500" alt="Dais 1">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold">Keynote Speech</h3>
+                        <p class="text-gray-500 italic">General (Rtd) Tan Sri Azumi</p>
+                        <p class="text-gray-500 italic">Vice President 2 of UNAM</p>
+                    </div>
+                </div>
+                <div class="w-full lg:w-4/5  mx-auto overflow-hidden border-white">
+                    <img src="./Images/special_remarks.png" class="w-full grayscale-25 hover:grayscale-0 transition-all duration-500" alt="Dais 2">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold">Special Remarks</h3>
+                        <p class="text-gray-500 italic">Dato' Sri Mustapa Mohamed</p>
+                        <p class="text-gray-500 italic">President of UNAM</p>
+                    </div>
+                </div>
+                <div class="w-full lg:w-4/5  mx-auto overflow-hidden">
+                    <img src="./Images/welcoming_remarks.png" class="w-full grayscale-25 hover:grayscale-0 transition-all duration-500" alt="Dais 1">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold">Welcoming Remarks</h3>
+                        <p class="text-gray-500 italic">Professor Dato' Elizabeth Lee</p>
+                        <p class="text-gray-500 italic">CEO of Sunway Education Group</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="main-bg-colour py-10">
@@ -112,5 +132,6 @@
     </footer>
 
     <script src="./js/navbar.js"></script>
+    <script src="./js/scroll_reveal.js"></script>
 </body>
 </html>
